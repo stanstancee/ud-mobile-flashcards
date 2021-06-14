@@ -10,10 +10,10 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/stanstancee/ud-mobile-flashcards/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/stanstancee/mobile-flashcards" />
+    <img alt="License: MIT" src="https://img.shields.io/github/license/stanstancee/ud-mobile-flashcards" />
   </a>
   <a href="https://twitter.com/statan" target="_blank">
-    <img alt="Twitter: statan" src="https://img.shields.io/twitter/follow/statan.svg?style=social" />
+    <img alt="Twitter: luke_stancee" src="https://img.shields.io/twitter/follow/luke_stancee.svg?style=social" />
   </a>
 </p>
 
@@ -41,7 +41,7 @@ yarn start
 ```
 ## Specification
 This projects was created with **create-react-app**
-You may prefer to use **expo-cli** in development
+You may prefer to use **expo** in development 
 ### run
 ```sh
 expo start

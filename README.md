@@ -40,8 +40,8 @@ npm start
 yarn start
 ```
 ## Specification
-This projects was created with **create-react-app**
-You may prefer to use **expo** in development 
+This projects was created with **create-react-native-app**
+You may prefer to use [expo](https://expo.io/) in development 
 ### run
 ```sh
 expo start

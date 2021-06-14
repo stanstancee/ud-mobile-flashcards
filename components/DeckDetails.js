@@ -29,12 +29,13 @@ class DeckDetails extends Component {
     render() {
         const { title , decks} = this.props
         const deck =  decks[title]
+        const len = deck.questions.length
         return (
             <TouchableWithoutFeedback onPress={() => this.animatedBox(title)}>
                 <Animated.View style={[globalStyles.container,styles.container, { transform: [{ scale: this.state.value }] }]}>
                     <View>
                         <Text style={[globalStyles.text]} >{deck.title}</Text>
-                        <Animated.Text style={[globalStyles.smallText, { fontSize: 20 }]}>{deck.questions.length} flashcards</Animated.Text>
+                        <Animated.Text style={[globalStyles.smallText, { fontSize: 20 }]}>{len} {len > 1? "flashcards":"flashcard"} </Animated.Text>
                     </View>
                     <AntDesign name="rightcircle" size={50} color={colors.white} />
                 </Animated.View>

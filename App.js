@@ -37,12 +37,14 @@ const FlashcardStatusBar = ({ backgroundColor, ...props }) => {
     );
 }
 class App extends Component {
+    //when component mounts, call setLocalNotification() which will register a notification for every 7pm
     componentDidMount(){
-
          setLocalNotification()
     }
 
     render() {
+
+    //Notifications.setNotificationHandler allow notification when app is on foreground
         Notifications.setNotificationHandler({
             handleNotification: async () => ({
               shouldShowAlert: true,
@@ -50,7 +52,7 @@ class App extends Component {
               shouldSetBadge: false,
             }),
           });
-          
+
         const Tab = createBottomTabNavigator();
         const DeckListStack = createStackNavigator();
         const AddDeckStack = createStackNavigator();

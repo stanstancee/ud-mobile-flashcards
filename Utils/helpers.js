@@ -72,7 +72,7 @@ export async function setLocalNotification() {
     const parsedData = JSON.parse(data)
 
     if (parsedData === null) {
-      const status = await Notifications.requestPermissionsAsync({
+      const permission = await Notifications.requestPermissionsAsync({
         ios: {
           allowAlert: true,
           allowBadge: true,
@@ -82,7 +82,7 @@ export async function setLocalNotification() {
       })
 
 
-      if (status.status === 'granted') {
+      if (permission.status === 'granted') {
 
         Notifications.cancelAllScheduledNotificationsAsync()
 

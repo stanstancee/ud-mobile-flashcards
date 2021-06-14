@@ -38,20 +38,7 @@ class AddDeck extends Component {
     }
 
   }
-// handleNotification = () =>{
-//   Notifications.scheduleNotificationAsync(
-//     {
-//       content: {
-//         title: 'Complete a quiz',
-//         body: "You are yet to complete a quiz today",
-//       },
-//       trigger: {
-//         seconds:10
-//       }
-//     }
 
-// )
-// }
 
   render() {
     const { warning, title } = this.state

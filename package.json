@@ -1,5 +1,18 @@
 {
+  "name": "mobile-flashcards",
   "main": "index.js",
+  "version": "0.1.1",
+  "description": "CLI that generates beautiful README.md files.",
+  "author": "Stanley Ifeoha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanstancee/ud-mobile-flashcards.git"
+  },
+  "engines": {
+    "npm": ">=6.14.0",
+    "node": ">=14.16.11"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
